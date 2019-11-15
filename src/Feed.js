@@ -18,6 +18,11 @@ class Feed extends React.Component {
             });
     }
 
+    handleSubmit(event) {
+        event.preventDefault();
+        alert('hssss....');
+    }
+
     render() {
         const Posts = this.state.posts.map((post) => {
             return (
@@ -32,8 +37,11 @@ class Feed extends React.Component {
                     <p className="text-left">
                         {post.caption}
                     </p>
-                    <p>//</p>
-                    {/* <button className="align-left" type="submit" className="btn btn-danger">Dislike</button> */}
+                    <form onSubmit={this.handleSubmit}>
+                        <p className="float-left"><button type="submit" className="btn btn-danger">Dislike</button></p>
+                    </form>
+                    <br />
+                    <hr className="p-1" />
                 </>
             )
         })
