@@ -1,68 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Catgram (Front End)
 
-## Available Scripts
+For this project, we attempted to clone a website of our choice. I decided to make a version of Instagram for cats...
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+This project is not finished. Currently you need to find a user in the database, and enter their username and password in order to log in.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once logged in, you can view your feed of fellow cats! Each post displays:
+- Username
+- Location
+- An image
+- Caption
+- Dislike button
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Disliking a photo will cause the user to hiss at you.
 
-### `npm test`
+You can log out by pressing the "log out" button.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing
 
-### `npm run build`
+Right now, the code likely won't run on GH Pages, so you might have to download the code yourself...
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the tests
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Features I would like to add if I had more time:**
+- You will not be able to view the page without the proper auth token.
+- Logging out will delete the auth token
+- You will be able to register a new account
+- Endless scroll -> more posts will load once you get near the bottom
+- The ability to search for other users
+- The ability to follow other users
+- Commenting on a post
+- Disliking a post will add to the dislike tally
+- The ability to:
+  - Upload a photo
+  - Create a caption
+  - Post the photo to your feed
+- Clean up code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built With
 
-### `npm run eject`
+* [React.js](https://reactjs.org/) - The JS library used
+* [Bootstrap](https://getbootstrap.com/) - The CSS framework used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you've found a bug in my code, please feel free to send me an Issue!
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Authors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Robbie Gay** - [Robbie's Blog](https://robbiegay.github.io)
