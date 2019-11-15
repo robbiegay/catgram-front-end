@@ -1,11 +1,16 @@
 import React from 'react';
+import Layout from './Layout.js';
 import axios from 'axios';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      token: '',
+    }
+
+    this.getToken = this.getToken.bind(this);
   }
 
   componentDidMount() {
@@ -13,19 +18,18 @@ class App extends React.Component {
       .then(response => {
         const data = response.data;
         // this.setState({ persons });
-        console.log(data);
+        // console.log(data);
       })
+  }
+
+  getToken(token) {
+    this.setState({ token: token });
+    console.log(this.state);
   }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            meow...
-            </p>
-        </header>
-      </div>
+      <Layout tokenSetter={this.getToken} token={this.state.token} />
     );
   }
 }
